@@ -5,7 +5,7 @@ import requests
 class FixerService:
     def __init__(self):
         self.FIXER_API_ENDPOINT = 'http://data.fixer.io/api/latest'
-        self.FIXER_API_KEY = os.environ['FIXER_API_KEY']
+        self.FIXER_API_KEY = os.environ.get('FIXER_API_KEY', None)
 
     def get_exchange_rates(self):
         params = {
