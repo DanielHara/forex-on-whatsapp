@@ -17,7 +17,10 @@ To install dependencies, run
 ```
 pip3 install -r requirements.txt
 ```
-You'll need some env vars, like the API
+You'll need some env vars, like the Fixer API key and Twilio credentials. Put them in the `env.txt` file, and run
+```
+source env.txt
+```
 
 ### Running the app
 
