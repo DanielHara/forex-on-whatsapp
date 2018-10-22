@@ -5,8 +5,11 @@ This project aims to scale up to an application to send the current exchange rat
 
 ### Requirements
 MongoDB
+
 Python >=3.6
-An Fixer API key (https://fixer.io/)
+
+A Fixer API key (https://fixer.io/)
+
 Twilio credentials (https://www.twilio.com/docs/iam/test-credentials)
 
 ### Setup
