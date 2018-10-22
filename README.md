@@ -1,2 +1,2 @@
-# forex-on-whatsapp
-App to send exchange rates by Whatsapp
+# twilio-app
+Some experiments using twilio to send WhatsApp messages.
