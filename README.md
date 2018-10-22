@@ -51,3 +51,5 @@ python3 run_jobs.py
 I am still working to dockerize the whole application, also to schedule the Whatsapp sending task, and am looking forward to deploy a demo of it on AWS. I will also write some nice forms with React for the end user to interact with.
 
 Enjoy!
+
+<img src='Screenshot.png' width=300>
