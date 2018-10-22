@@ -50,12 +50,12 @@ class TestTwilioService(unittest.TestCase):
             {
                 'body': 'Exchange rates: \n1 EUR = 4.0 BRL\n1 EUR = 3.5 USD\n',
                 'from_': 'whatsapp:+14155238886',
-                'to': 'whatsapp:++5511123456789',
+                'to': 'whatsapp:+5511123456789',
             },
             {
                 'body': 'Exchange rates: \n1 EUR = 1.1 CHF\n1 EUR = 3.5 USD\n',
                 'from_': 'whatsapp:+14155238886',
-                'to': 'whatsapp:++5511123456780',
+                'to': 'whatsapp:+5511123456780',
             },
         ]
 

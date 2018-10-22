@@ -33,6 +33,6 @@ class SendWhatsappJob:
             message_data = {
                 'body': message,
                 'from_': self.SANDBOX_PHONE_NUMBER,
-                'to': 'whatsapp:+{}'.format(user['phone_number']),
+                'to': 'whatsapp:{}'.format(user['phone_number']),
             }
             self.twilio_service.send_message(message_data)
