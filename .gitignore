@@ -106,9 +106,6 @@ venv.bak/
 # venv:
 venv/
 
-# env:
-env.txt
-
 # my_stuff:
 personal_project_info.txt
 
