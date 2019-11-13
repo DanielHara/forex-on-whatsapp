@@ -1,4 +1,5 @@
 from flask import Flask, request, jsonify
+from flask_cors import CORS, cross_origin
 from src.services.userservice import UserService
 from src.database.databaseservice import DatabaseService
 from src.utils.phonenumber_utils import is_valid_br_phone_number, get_e164_phone_number_from_br_number
@@ -7,6 +8,7 @@ from bson.json_util import dumps
 
 
 app = Flask(__name__)
+CORS(app)
 app.config.from_object('src.app.config.Config')
 
 db = DatabaseService()

@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  api:
+    image: forex-on-whatsapp
+    build: ./
+    ports:
+      - "5000:5000"
+    environment:
+      - FIXER_API_KEY=FIXER_API_KEY
+      - TWILIO_ACCOUNT_SID=TWILIO_ACCOUNT_SID
+      - TWILIO_AUTH_TOKEN=TWILIO_AUTH_TOKEN
+      - DB_PORT_27017_TCP_ADDR=mongodb://mongo:27017/
+  mongo:
+    image: mongo:3.0.2

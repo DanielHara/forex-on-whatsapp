@@ -45,6 +45,13 @@ The flask application exposes a few endpoints to subscribe users. To subscribe a
 ```
 The key `assets` is an array with the international code of the currencies whose exchange rates the user wants to receive.
 
+### Running the app with Docker
+You may also run the app with Docker:
+```
+docker-compose build && docker-compose up
+```
+The app will be running on http://localhost:5000
+
 ### Running the Whatsapp sending job
 
 Meanwhile, I've been testing this app with the Twilio Sandbox.
@@ -54,7 +61,7 @@ To run the job to send the Whatsapp messages, run
 python3 run_jobs.py
 ```
 
-I am still working to dockerize the whole application, also to schedule the Whatsapp sending task, and am looking forward to deploy a demo of it on AWS. I will also write some nice forms with React for the end user to interact with.
+I am still studying some options to schedule the Whatsapp sending task using Docker, and am looking forward to deploy a demo of it on AWS. I will also write some nice forms with React for the end user to interact with.
 
 Enjoy!
 
